@@ -125,7 +125,7 @@ input:valid ~ label{
 
 /* Right Content background image*/
 .card-signin .card-img-right {
-  width: 50%;
+  width: 55%;
   background: scroll center url('../img/bg.jpg');
   background-size: cover;
 }
