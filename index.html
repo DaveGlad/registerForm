@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dependencies -->
+    <script defer src="https://kit.fontawesome.com/cd3ed806de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="userSign"><span><i class="far fa-user" aria-hidden="true"></i></span></div>
+                <!-- Left content Form -->
+                <div class="card card-signin flex-row my-5">
+                    <div class="card-body">
+                        <h4 class="card-title ">Inscrivez vous</h4>
+                        <p>Creer un compte gratuit sur Futur digital</p>
+                        <form class="form-signin" id="form" method="POST">
+                            <!-- UserName -->
+                            <div class="input-field">
+                                <input type="text" id="username" required>
+                                <label>Nom et Prénom</label>
+                                <small class="ml-3">Error message</small>
+                            </div>
+
+                            <!-- UserMail -->
+                            <div class="input-field">
+                                <input type="email" id="email" required>
+                                <label>Adresse Email</label>
+                                <small class="ml-3">Error message</small>
+                            </div>
+
+                            <!-- UserPassword -->
+                            <div class="input-field">
+                                <input class="pswrd" type="password" id="password" minlength="4" required>
+                                <span class="show"><i class="far fa-eye" aria-hidden="true"></i></span>
+                                <label>Mot de passe</label>
+                                <small class="ml-3">Error message</small>
+                            </div>
+
+                            <!-- user confirm password -->
+                            <div class="input-field">
+                                <input class="pswrd" type="password" id="password2" required>
+                                <span class="show" toggle="#password-field"
+                                    class="fa fa-fw fa-eye field-icon toggle-password"><i class="far fa-eye"
+                                        onclick="myFunction()" aria-hidden="true"></i></span>
+                                <label>Confirmer le mot de passe</label>
+                                <small class="ml-3">Error message</small>
+                            </div>
+
+                            <!-- user checkBox -->
+                            <div class="checkboxContainer">
+                                <label class="checkbox path">
+                                    <input type="checkbox" for="customCheck" required>
+                                    <svg viewBox="0 0 21 21">
+                                        <path
+                                            d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186">
+                                        </path>
+                                    </svg>
+                                </label>
+                                <label for="customCheck" class="label-title">J'ai accepté les <a href="#"
+                                        class="">conditions générale</a></label>
+                            </div>
+
+                            <!-- btn submit form -->
+                            <button class="btn btn-lg btn-block text-uppercase" type="submit">S'identifier</button>
+                        </form>
+                    </div>
+                    <!-- Right Content Background image -->
+                    <div class="card-img-right d-none d-md-flex">
+                        <!-- Background image for card set in CSS! -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/js/script.js"></script>
+    <script src="/js/validation.js"></script>
+</body>
+
+
+</html>
